@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="hhh" type="text">
+    <p id="hr"></p>
+    <button onclick="getnum()"> click me </button>
+    <script>
+function getnum()
+{
+    var num=document.getElementById("hhh");
+    var numbe = parseInt(num.value);
+    factorial(numbe)
+}
+        // var number=12;
+        // var facto=factorial(number)
+
+function factorial( number){
+    var result=1;
+    for (let index = 1; index <=number; index++)
+    {
+        result=result*index;  
+    }
+    document.getElementById("hr").innerHTML=result;
+}
+    </script>
+</body>
+</html>
